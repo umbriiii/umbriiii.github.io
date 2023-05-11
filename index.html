@@ -2,16 +2,50 @@
 <html>
 <head>
     <title>umbri</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f6f6f6;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        h2 {
+            margin-top is 5px;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+       
+        button:hover {
+            background-color: #3e8e41;
+        }
+    </style>
 </head>
 <body>
-    <h1>rng yt</h1>
-    <h2>pick a random vid to watch</h2>
+    <h1>Random Video Generator</h1>
+    <h2>Pick a random video to watch!</h2>
 
     <button onclick="myFunction()">Choose Video</button>
 
     <script>
         function myFunction() {
-            var videoURLs = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D", "https://www.youtube.com/watch?v=wDgQdr8ZkTw&pp=ygULbWVnYWxvdmFuaWE%3D"];
+            var videoURLs = ["https://www.youtube.com/watch?v=0FCvzsVlXpQ&pp=ygULbWVnYWxvdmFuaWE%3D", "https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"];
             var randomIndex = Math.floor(Math.random() * videoURLs.length);
             window.location = videoURLs[randomIndex];
         }
