@@ -1,1 +1,20 @@
-<title>umbri</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>umbri</title>
+</head>
+<body>
+    <h1>rng yt</h1>
+    <h2>pick a random vid to watch</h2>
+
+    <button onclick="myFunction()">Choose Video</button>
+
+    <script>
+        function myFunction() {
+            var videoURLs = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D", "https://www.youtube.com/watch?v=wDgQdr8ZkTw&pp=ygULbWVnYWxvdmFuaWE%3D"];
+            var randomIndex = Math.floor(Math.random() * videoURLs.length);
+            window.location = videoURLs[randomIndex];
+        }
+    </script>
+</body>
+</html>
