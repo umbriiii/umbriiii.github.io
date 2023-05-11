@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Random YouTube Video Button</title>
-  </head>
-  <body>
-    <button onclick="randomYoutubeVideo()">Click for a random YouTube video</button>
+<button onclick="randomYouTube()">Random Video</button>
 
-    <script>
-      function randomYoutubeVideo() {
-        var videos = ["https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://www.youtube.com/watch?v=7jauRiX0Qq4", "https://www.youtube.com/watch?v=xfr64zoBTAQ", "https://www.youtube.com/watch?v=9D-QD_HIfjA", "https://www.youtube.com/watch?v=4ADh8FsXo-s"];
-        var randomIndex = Math.floor(Math.random() * videos.length);
-        var randomVideo = videos[randomIndex];
-        window.location.href = randomVideo;
-      }
-    </script>
-  </body>
-</html>
+<script>
+function randomYouTube() {
+  var randomNumber = Math.floor(Math.random() * 1000000);
+  window.location = "https://www.youtube.com/watch?v=" + randomNumber;
+}
+</script>
